@@ -33,31 +33,15 @@ body {
 .logoBox {
   display: flex;
   align-items: center;
-  gap: 10px;
+  background: white;
+  border-radius: 6px;
+  padding: 3px 5px;
 }
 
-.logoIcon {
-  width: 38px;
-  height: 38px;
-  border-radius: 12px;
-  background: #f6c77b;
-  color: #0f172a;
-  display: grid;
-  place-items: center;
-  font-size: 22px;
-  font-weight: 900;
-}
-
-.logoBox strong {
+.brandLogo {
   display: block;
-  letter-spacing: 1px;
-}
-
-.logoBox span {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 3px;
-  opacity: 0.8;
+  width: 172px;
+  height: auto;
 }
 
 .headerCall {

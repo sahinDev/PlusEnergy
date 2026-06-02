@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="219" height="58" viewBox="0 0 219 58" role="img" aria-labelledby="plusenergy-title">
+  <title id="plusenergy-title">PlusEnergy Solutions</title>
+  <rect width="219" height="58" fill="#ffffff"/>
+  <rect x="2" y="3" width="50" height="52" rx="2" fill="#ffffff" stroke="#050505" stroke-width="4"/>
+  <rect x="8" y="12" width="16" height="5" fill="#050505"/>
+  <rect x="13.5" y="6.5" width="5" height="16" fill="#050505"/>
+  <path d="M33.6 9 20.2 31.2h10.7L24.5 49 44.1 22.2H31.6L38.5 9Z" fill="#050505"/>
+  <text x="59" y="27" fill="#050505" font-family="Montserrat, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="0">PLUSENERGY</text>
+  <text x="60" y="49" fill="#4f4f4f" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="5">SOLUTIONS</text>
+</svg>

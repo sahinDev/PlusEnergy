@@ -1,6 +1,11 @@
 import { useMemo, useState } from "react";
 import "./App.css";
 
+const plusEnergyLogoUrl = new URL(
+  "./assets/plusenergy-solutions-logo.svg",
+  import.meta.url
+).href;
+
 type Service = {
   title: string;
   description: string;
@@ -71,11 +76,7 @@ export default function App() {
     <div className="site">
       <header className="topbar">
         <div className="logoBox">
-          <div className="logoIcon">⚡</div>
-          <div>
-            <strong>PLUSENERGY</strong>
-            <span>SOLUTIONS</span>
-          </div>
+          <img src={plusEnergyLogoUrl} alt="PlusEnergy Solutions" className="brandLogo" />
         </div>
 
         <a href="tel:6475013597" className="headerCall">
