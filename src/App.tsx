@@ -16,26 +16,34 @@ type Service = {
 const services: Service[] = [
   {
     title: "Residential Electrical Services",
-    description: "Panel upgrades, lighting, EV chargers, troubleshooting, rewiring and safe home electrical installations.",
-    image: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?q=80&w=1200&auto=format&fit=crop",
+    description:
+      "Panel upgrades, lighting, EV chargers, troubleshooting, rewiring and safe home electrical installations.",
+    image:
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?q=80&w=1200&auto=format&fit=crop",
     keywords: ["home", "residential", "panel", "ev charger"],
   },
   {
     title: "Commercial Electrical Services",
-    description: "Reliable electrical work for restaurants, retail locations, offices, plazas and commercial spaces.",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
+    description:
+      "Reliable electrical work for restaurants, retail locations, offices, plazas and commercial spaces.",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
     keywords: ["commercial", "office", "restaurant", "retail"],
   },
   {
     title: "Emergency Repairs",
-    description: "Fast response electrical diagnostics, power issues, breaker problems and urgent repairs.",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+    description:
+      "Fast response electrical diagnostics, power issues, breaker problems and urgent repairs.",
+    image:
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
     keywords: ["emergency", "repair", "breaker", "power"],
   },
   {
     title: "Lighting Installation",
-    description: "Interior, exterior, pot lights, commercial lighting, LED upgrades and architectural lighting.",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=1200&auto=format&fit=crop",
+    description:
+      "Interior, exterior, pot lights, commercial lighting, LED upgrades and architectural lighting.",
+    image:
+      "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=1200&auto=format&fit=crop",
     keywords: ["lighting", "led", "pot lights", "upgrade"],
   },
 ];
@@ -44,17 +52,20 @@ const projects = [
   {
     title: "Tim Hortons Lighting Upgrade",
     location: "Windsor, Ontario",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop",
   },
   {
     title: "Restaurant Electrical Renovation",
     location: "Toronto, Ontario",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop",
   },
   {
     title: "Residential Exterior Lighting",
     location: "GTA",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
@@ -76,8 +87,18 @@ export default function App() {
     <div className="site">
       <header className="topbar">
         <div className="logoBox">
-          <img src={plusEnergyLogoUrl} alt="PlusEnergy Solutions" className="brandLogo" />
+          <img
+            src={plusEnergyLogoUrl}
+            alt="PlusEnergy Solutions"
+            className="brandLogo"
+          />
         </div>
+
+        <nav className="topLinks" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#quote">Quote</a>
+        </nav>
 
         <a href="tel:6475013597" className="headerCall">
           Call
@@ -133,7 +154,7 @@ export default function App() {
           />
         </section>
 
-        <section className="section">
+        <section id="services" className="section">
           <div className="sectionHeader">
             <span>Services</span>
             <h2>Electrical solutions built for homes and businesses</h2>
@@ -146,7 +167,7 @@ export default function App() {
                 <div>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
-                  <a href="#quote">Request Quote →</a>
+                  <a href="#quote">Request Quote -&gt;</a>
                 </div>
               </article>
             ))}
@@ -159,7 +180,7 @@ export default function App() {
 
           <div className="reasonList">
             <div>
-              <b>Licensed & Insured</b>
+              <b>Licensed &amp; Insured</b>
               <p>Clear trust signal shown early on mobile.</p>
             </div>
             <div>
@@ -173,7 +194,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section id="projects" className="section">
           <div className="sectionHeader">
             <span>Projects</span>
             <h2>Recent electrical work</h2>
@@ -189,20 +210,6 @@ export default function App() {
                 </div>
               </article>
             ))}
-          </div>
-        </section>
-
-        <section className="seoSection">
-          <span>SEO Landing Pages</span>
-          <h2>Pages to help Plus Energy rank on Google</h2>
-
-          <div className="seoTags">
-            <p>Electrician Toronto</p>
-            <p>Licensed Electrician Ontario</p>
-            <p>Commercial Electrician GTA</p>
-            <p>Emergency Electrician Toronto</p>
-            <p>Panel Upgrade Electrician</p>
-            <p>Lighting Installation Toronto</p>
           </div>
         </section>
 
